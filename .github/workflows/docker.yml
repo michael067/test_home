@@ -26,6 +26,6 @@ jobs:
           push: true
           tags: michael067/test_home:latest
 
-      - name: Trigger Portainer webhook
-        run: |
-          curl -X POST ${{ secrets.PORTAINER_WEBHOOK_URL }}
+      #- name: Trigger Portainer webhook
+        #run: |
+          #curl -X POST ${{ secrets.PORTAINER_WEBHOOK_URL }}
