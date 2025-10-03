@@ -24,7 +24,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: michael067/Test_home:latest
+          tags: michael067/test_home:latest
 
       - name: Trigger Portainer webhook
         run: |
