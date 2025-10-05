@@ -21,8 +21,8 @@ COPY web/ /var/www/html/
 
 
 # Copy msmtp config and php conf
-COPY docker/msmtprc /etc/msmtprc
-COPY docker/conf.d/zz-msmtp.ini /usr/local/etc/php/conf.d/zz-msmtp.ini
+COPY msmtprc /etc/msmtprc
+COPY php.ini /usr/local/etc/php/php.ini
 
 
 # Secure msmtprc (readable by root and www-data) and prepare msmtp log
