@@ -186,9 +186,10 @@
             <p class="fade-in" style="font-size: 1.1rem; color: var(--text-gray); margin-bottom: 2rem;">
                 Vous avez un projet en tête ? Parlons-en et créons quelque chose d'extraordinaire ensemble.
             </p>
+
             <div id="form-message" style="display: none; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; text-align: center; font-weight: 500;"></div>
 
-            <form class="contact-form fade-in" action="contact.php" method="POST">
+            <form class="contact-form fade-in" action="contact.php" method="POST" id="contactForm">
                 <div class="form-group">
                     <label for="name">Nom</label>
                     <input type="text" id="name" name="name" required>
@@ -218,7 +219,7 @@
         <p>&copy; 2025 Théo Mathieu. Tous droits réservés.</p>
     </footer>
 
-   <script>
+    <script>
         // Navigation scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
