@@ -1,16 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théo Mathieu - Développeur Web Full Stack</title>
 </head>
+
 <body>
-  <h1>Formulaire de contact</h1>
-  <form action="contact.php" method="POST">
-    <label>Nom : <input type="text" name="name" required></label><br>
-    <label>Email : <input type="email" name="email" required></label><br>
-    <label>Message :<br><textarea name="message" required></textarea></label><br>
-    <button type="submit">Envoyer</button>
-  </form>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">TM</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Théo Mathieu</h1>
+            <h2 class="hero-subtitle">Développeur Web Full Stack</h2>
+            <p class="hero-description">
+                Passionné par la création d'expériences web exceptionnelles, je transforme vos idées en solutions
+                techniques élégantes et performantes.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title fade-in">À propos de moi</h2>
+        <div class="fade-in" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin-bottom: 2rem;">
+                Mon parcours en développement web m'a permis d'acquérir une solide maîtrise des technologies modernes.
+                Chaque projet représente un défi unique que je relève avec enthousiasme, en cherchant toujours à
+                améliorer
+                l'expérience utilisateur tout en garantissant une performance optimale.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray);">
+                Je crois fermement que la technologie doit être au service des utilisateurs. C'est pourquoi je m'efforce
+                de concevoir des interfaces intuitives, accessibles et esthétiques, tout en respectant les meilleures
+                pratiques du développement web moderne.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title fade-in">Mes compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🎨</div>
+                <h3>Front-end</h3>
+                <p>Création d'interfaces utilisateur modernes et responsives avec une attention particulière à
+                    l'expérience utilisateur.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">React</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">⚙️</div>
+                <h3>Back-end</h3>
+                <p>Développement d'APIs robustes et de systèmes backend performants pour alimenter vos applications.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🚀</div>
+                <h3>Performance</h3>
+                <p>Optimisation des performances web et mise en place des meilleures pratiques pour des applications
+                    rapides.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">SEO</span>
+                    <span class="tech-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title fade-in">Mes projets</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h3 class="project-title">Site Web Responsive</h3>
+                    <p class="project-description">
+                        site web maquette entièrement responsive conçu avec une approche desktop-first,
+                        garantissant une expérience optimale sur tous les appareils.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MATHIEUTheo/Booki.git" class="project-link">Voir le code →</a>
+                        <a href="#" class="project-link">Demo live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image"><img class="project-minia"src="96295-javascript.png" /></div>
+                <div class="project-content">
+                    <h3 class="project-title">JavaScript</h3>
+                    <p class="project-description">
+                        Une application web complète avec interface utilisateur interactive et backend robuste,
+                        optimisée pour les performances et l'accessibilité.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MATHIEUTheo/Sophie-bluel-portfolio" class="project-link">Voir le
+                            code →</a>
+                        <a href="#" class="project-link">Demo live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image"><img class="project-minia" src="react.webp"></div>
+                <div class="project-content">
+                    <h3 class="project-title">React</h3>
+                    <p class="project-description">
+                        Une application web complète avec interface utilisateur interactive,
+                        conçu avec react
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir le code →</a>
+                        <a href="#" class="project-link">Demo live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <h3 class="project-title">Backend</h3>
+                    <p class="project-description">
+                        Site web entièrement responsive conçu avec une approche mobile-first,
+                        garantissant une expérience optimale sur tous les appareils.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MATHIEUTheo/Backend" class="project-link">Voir le code →</a>
+                        <a href="#" class="project-link">Demo live →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">⚡</div>
+                <div class="project-content">
+                    <h3 class="project-title">Optimisation Performance</h3>
+                    <p class="project-description">
+                        Projet d'optimisation complète d'une application existante,
+                        améliorant significativement les temps de chargement et l'expérience utilisateur.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/MATHIEUTheo/optimisation-et-debug.git" class="project-link">Voir le
+                            code →</a>
+                        <a href="#" class="project-link">Demo live →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact">
+            <h2 class="section-title fade-in">Travaillons ensemble</h2>
+            <p class="fade-in" style="font-size: 1.1rem; color: var(--text-gray); margin-bottom: 2rem;">
+                Vous avez un projet en tête ? Parlons-en et créons quelque chose d'extraordinaire ensemble.
+            </p>
+
+            <form class="contact-form fade-in" action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/th%C3%A9o-mathieu-0201992b3/" class="social-link"
+                title="LinkedIn"><img class="footerlink" src="linkedin-delphine-pic-marketing.png"/></a>
+            <a href="https://github.com/MATHIEUTheo/" class="social-link" title="GitHub"><img class="footerlink" src="github-icon-filled-256.png"></a>
+            <a href="mailto:theo1.mathieu@epitech.eu" class="social-link" title="Email">📧</a>
+        </div>
+        <p>&copy; 2025 Théo Mathieu. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling pour les liens de navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Fermer le menu mobile si ouvert
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Intersection Observer pour les animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observer tous les éléments avec la classe fade-in
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Formulaire de contact
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Animation du bouton
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.style.opacity = '0.7';
+            submitBtn.disabled = true;
+
+            // Simulation d'envoi
+            setTimeout(() => {
+                submitBtn.textContent = 'Message envoyé !';
+                submitBtn.style.background = '#10b981';
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                    this.reset();
+                }, 2000);
+            }, 2000);
+        });
+
+        // Effet de parallaxe subtil pour le background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const bgAnimation = document.querySelector('.bg-animation::before');
+            if (bgAnimation) {
+                bgAnimation.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Animation des cartes au hover
+        document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
+
 </html>
